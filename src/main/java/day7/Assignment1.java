@@ -1,5 +1,7 @@
 package day7;
 
+import java.util.Arrays;
+
 public class Assignment1 {
 
     public static void main(String[] args) {
@@ -12,22 +14,16 @@ after sorting 10 20 40 50 100*/
 
 
         int[] arr = {50, 20, 40, 10, 100};
-
-        boolean swapped = true;
-        int j = 0;
-        int temp;
-        while (swapped) {
-            swapped = false;
-            j++;
-            for (int i = 0; i < arr.length - j; i++) {
-                if (arr[i] > arr[i + 1]) {
-                    temp = arr[i];
-                    arr[i] = arr[i + 1];
-                    arr[i + 1] = temp;
-                    swapped = true;
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j+1] = temp;
                 }
             }
         }
+        System.out.println(Arrays.toString(arr));
 
 
     }
