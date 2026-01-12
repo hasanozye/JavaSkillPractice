@@ -12,7 +12,7 @@ public class ObjectTypeArray {
         a[3] = true;
         a[4] = 10.5;
 
-        System.out.println("a = " + Arrays.toString(a));
+        System.out.println("deneme = " + Arrays.toString(a));
 
         for (Object x : a){
             System.out.println("x = " + x);
