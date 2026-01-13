@@ -34,10 +34,11 @@ public class StringComparison {
         String s8 = new String("abc");
         String s9 = s8;
 
-        System.out.println(s7 == s8);   //false
+        System.out.println(s7 == s8);       //false
         System.out.println(s7.equals(s8));  //true
-        System.out.println(s8 == s9);   //true
+        System.out.println(s8 == s9);       //true
         System.out.println(s8.equals(s9));  //true
+
 
 
 
