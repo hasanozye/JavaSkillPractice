@@ -16,7 +16,18 @@ class B extends A {
     }
 }
 
-class C extends B{
+class C extends B {
+    void printFirstRandomString() {
+        System.out.println("Java is fun");
+    }
+
+    void printSecondRandomString() {
+        System.out.println("Hello from class C");
+    }
+
+    void printThirdRandomString() {
+        System.out.println("Inheritance practice");
+    }
 
 }
 
@@ -28,5 +39,10 @@ public class InheritanceTypes {
         boj.b = 20;
         boj.display();
         boj.show();
+
+        C coj = new C();
+        coj.printFirstRandomString();
+        coj.printSecondRandomString();
+        coj.printThirdRandomString();
     }
 }
