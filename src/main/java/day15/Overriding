@@ -1,0 +1,19 @@
+Day-15
+--------
+
+Overriding
+---
+
+Method Overriding:
+--------
+1) Possible only in multiple classes (inheritance).
+2) We should NOT change the signature of the method, but we should change the body.
+3) Method names are the same.
+4) Belongs to inheritance.
+
+Method Overloading:
+-----
+1) Possible in single and multiple classes (inheritance).
+2) We should change the signature of the method.
+3) Method names are the same.
+4) Belongs to polymorphism.
