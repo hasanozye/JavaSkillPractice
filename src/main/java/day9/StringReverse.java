@@ -1,39 +1,25 @@
 package day9;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class StringReverse {
     public static void main(String[] args) {
 
-//        Method1
-        String s = "Selenium";
-        String rev = "";
+//        Method 1
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter your str: ");
+        String str = scanner.next();
 
-        for (int i = s.length() - 1; i >= 0; i-- ) {
-            rev += s.charAt(i);
+
+        /*String result = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            result += str.charAt(i);
         }
-        System.out.println("Reversed String : " + rev);
+        System.out.println("Your reversed string is " + result);*/
 
-//        Method2 by converting string to char array
+//        Method 2 by converting string to array
+        char[] charArr = str.toCharArray();
 
-        String s2 = "Welcome";
-        String rev2 = "";
-
-        char[] charArray = s2.toCharArray();
-        System.out.println(Arrays.toString(charArray));
-
-        for(int i = charArray.length - 1; i >= 0 ; i--){
-             rev2 += charArray[i];
-        }
-        System.out.println("rev = " + rev2);
-
-//        Method 3  -  using StringBuffer Class
-        StringBuffer stringBuffer = new StringBuffer("Welcome");
-        System.out.println(stringBuffer.reverse());
-
-//        Method 4  -   using StringBuilder Class
-        StringBuilder stringBuilder = new StringBuilder("Welcome");
-        System.out.println(stringBuilder.reverse());
 
     }
 

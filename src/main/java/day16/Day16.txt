@@ -18,4 +18,4 @@ Interface
 7) We can define interface with interface keyword.
 8) A class extends another class, an interface extends another interface but a class
    implements an interface.
-9) We can create Object reference for Interface but we cannot instantiate interface.
+9) We can create Object reference for Interface but we cannot instantiate interface.xa
